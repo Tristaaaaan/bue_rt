@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "227742441628",
+    "firebase_url": "https://rt-screen-afa55-default-rtdb.firebaseio.com",
+    "project_id": "rt-screen-afa55",
+    "storage_bucket": "rt-screen-afa55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227742441628:android:2d7322469c2483bb6bcd59",
+        "android_client_info": {
+          "package_name": "com.example.screen_flutter_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYcr_hu25eYFJpUnn8K4LeGgF2gfHIxCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227742441628:android:42c8d19c420bf63f6bcd59",
+        "android_client_info": {
+          "package_name": "com.tristans.bue_rt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYcr_hu25eYFJpUnn8K4LeGgF2gfHIxCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
