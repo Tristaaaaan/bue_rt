@@ -3,38 +3,50 @@ import 'package:flutter/material.dart';
 class SpannedText extends StatelessWidget {
   final String value;
   final String unit;
-  final String label;
-  final IconData icon;
+  final String? label;
+  final IconData? icon;
+  final bool? withLabel;
+  final Color textColor;
+  final double? labelSize;
+  final double? valueSize;
+  final double? unitSize;
+
   const SpannedText({
     super.key,
     required this.value,
     required this.unit,
-    required this.label,
-    required this.icon,
+    this.label,
+    this.icon,
+    this.withLabel = true,
+    required this.textColor,
+    this.labelSize = 18,
+    this.valueSize = 50,
+    this.unitSize = 26,
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Row(
-          children: [
-            Icon(
-              icon,
-              size: 18,
-            ),
-            const SizedBox(
-              width: 5,
-            ),
-            Text(
-              label,
-              style: const TextStyle(
-                fontSize: 18,
+        if (withLabel!)
+          Row(
+            children: [
+              Icon(
+                icon,
+                size: 18,
               ),
-            )
-          ],
-        ),
+              const SizedBox(
+                width: 5,
+              ),
+              Text(
+                label!,
+                style: TextStyle(
+                  fontSize: labelSize,
+                ),
+              )
+            ],
+          ),
         Text.rich(
           TextSpan(
             children: [
@@ -42,18 +54,19 @@ class SpannedText extends StatelessWidget {
                 text: value == "0" ? "00" : value.toString(),
                 style: TextStyle(
                   fontFamily: 'Digi',
-                  fontSize: 70,
+                  fontSize: valueSize,
                   fontStyle: FontStyle.italic,
-                  color: Theme.of(context).colorScheme.tertiaryContainer,
+                  color: textColor,
                 ),
               ),
               TextSpan(
                 text: unit,
                 style: TextStyle(
                   fontFamily: 'Digi',
-                  fontSize: 24, // Change this to the desired size for "km"
+                  fontSize:
+                      unitSize, // Change this to the desired size for "km"
                   fontStyle: FontStyle.italic,
-                  color: Theme.of(context).colorScheme.tertiaryContainer,
+                  color: textColor,
                 ),
               ),
             ],

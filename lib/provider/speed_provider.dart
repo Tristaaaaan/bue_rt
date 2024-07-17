@@ -8,6 +8,6 @@ final speedProvider = StreamProvider<double>((ref) {
   return Geolocator.getPositionStream().map((Position position) {
     return position.speed; // Speed in meters per second
   });
-
+  // Test
   // return Stream.value(3.0);
 });
