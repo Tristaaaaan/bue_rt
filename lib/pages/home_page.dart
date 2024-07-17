@@ -94,8 +94,7 @@ class Home extends ConsumerWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 speed.when(data: (data) {
-                                  final double speedKmH =
-                                      data * 3.6; // Convert m/s to km/h
+                                  final double speedKmH = data * 3.6;
                                   print("Speed: $speedKmH");
                                   return Expanded(
                                     child: Padding(
@@ -295,8 +294,8 @@ class Home extends ConsumerWidget {
                             Align(
                               alignment: Alignment.bottomCenter,
                               child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 60, right: 60),
+                                padding: const EdgeInsets.only(
+                                    left: 60, right: 60, bottom: 12),
                                 child: IntrinsicHeight(
                                   child: Row(
                                     mainAxisAlignment:
@@ -307,6 +306,9 @@ class Home extends ConsumerWidget {
                                         unit: "km",
                                         label: "Range",
                                         icon: Icons.directions_car,
+                                        textColor: Theme.of(context)
+                                            .colorScheme
+                                            .tertiaryContainer,
                                       ),
                                       SpannedText(
                                         value: data["distanceTravelled"]
@@ -314,18 +316,27 @@ class Home extends ConsumerWidget {
                                         unit: "km",
                                         label: "Distance Travelled",
                                         icon: Icons.navigation,
+                                        textColor: Theme.of(context)
+                                            .colorScheme
+                                            .tertiaryContainer,
                                       ),
                                       SpannedText(
                                         value: data["voltage"].toString(),
                                         unit: "V",
                                         label: "Voltage",
                                         icon: Icons.bolt,
+                                        textColor: Theme.of(context)
+                                            .colorScheme
+                                            .tertiaryContainer,
                                       ),
                                       SpannedText(
                                         value: data["current"].toString(),
                                         unit: "A",
                                         label: "Current",
                                         icon: Icons.electric_bolt,
+                                        textColor: Theme.of(context)
+                                            .colorScheme
+                                            .tertiaryContainer,
                                       ),
                                     ],
                                   ),
