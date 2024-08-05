@@ -45,6 +45,10 @@ flutter build appbundle --release
 * Flutter
 * Firebase
 
+## Application Preview
+![WhatsApp Image 2024-07-18 at 12 42 16 AM](https://github.com/user-attachments/assets/f39b3d68-1a9f-4fbe-b2f4-ab4ea303af9a)
+
+
 ## Contact
 
 For inquiries:
