@@ -1,8 +1,8 @@
 # BUE RT
 
-## An Android application that monitors the details when driving a custom-made car.
-
 ![WhatsApp Image 2024-07-18 at 12 42 16 AM](https://github.com/user-attachments/assets/f39b3d68-1a9f-4fbe-b2f4-ab4ea303af9a)
+
+## An Android application that monitors the details when driving a custom-made car.
 
 BUE RT is a mobile application designed to assist the driver of a custom-made car in monitoring speed, battery percentage, and more. The application offers the following features:
 
