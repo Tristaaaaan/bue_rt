@@ -1,5 +1,13 @@
 # BUE RT
 
+## An Android application that monitors the details when driving a custom-made car.
+
+BUE RT is a mobile application designed to assist the driver of a custom-made car in monitoring speed, battery percentage, and more. The application offers the following features:
+
+* Connects and receives data from Firebase Realtime Database
+* Obtains the current speed using the Android device's GPS
+* Enables the driver to monitor speed, battery percentage, and more
+  
 ## How to Use the Project
 
 Ensure that Flutter is already installed on your computer.
@@ -44,6 +52,10 @@ flutter build appbundle --release
 * Dart
 * Flutter
 * Firebase
+
+## Application Preview
+![WhatsApp Image 2024-07-18 at 12 42 16 AM](https://github.com/user-attachments/assets/f39b3d68-1a9f-4fbe-b2f4-ab4ea303af9a)
+
 
 ## Contact
 
